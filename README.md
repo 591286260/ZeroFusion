@@ -2,7 +2,7 @@
 ## Abstract
 CircRNA-miRNA interactions (CMIs) play a pivotal role in gene regulation, yet their prediction remains constrained by the scarcity of direct association data. Here, we present ZeroFusion, a novel zero-shot prediction framework leveraging multimodal graph cascade learning, which eliminates reliance on known CMIs. ZeroFusion integrates disease-mediated mechanisms and multimodal biological semantics by constructing a heterogeneous network that synergizes functional conservation features of circRNAs, ontology-driven semantic representations of diseases, and context-aware sequence embeddings of miRNAs. ZeroFusion employs a cascaded architecture to model cross-entity dependencies and topological patterns, where global attention mechanisms decipher long-range associations mediated by shared diseases, and local neighborhood propagation captures fine-grained circRNA-disease-miRNA triadic interactions. Through cascaded nonlinear transformations, the architecture fuses multimodal representations to enable zero-shot inference of unseen CMIs, circumventing the limitations of conventional methods dependent on direct observational evidence. Experimental results demonstrate that ZeroFusion achieves an AUC of 0.9539 on a newly constructed dataset and outperforms state-of-the-art methods across two benchmark datasets. In a hepatocellular carcinoma case study, 18 out of the top 20 predicted CMIs were experimentally validated.
 ## Framework
-![image](workflow.png)
+![image](workflw.png)
 ## Hardware requirements
 Training the ZeroFusion model does not strictly require a GPU, but having one is highly desirable for efficient performance. Therefore, proper installation of GPU drivers, including CUDA integration, is recommended.
 ## Setup Environment
